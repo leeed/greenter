@@ -70,10 +70,10 @@ class See
     /**
      * See constructor.
      */
-    public function __construct()
+    public function __construct($wsl = '', $params_soapclient = [])
     {
         $this->factory = new FeFactory();
-        $this->wsClient = new SoapClient();
+        $this->wsClient = new SoapClient($wsl, $params_soapclient);
         $this->signer = new SignedXml();
         $this->builders = [
             Model\Sale\Invoice::class => Xml\Builder\InvoiceBuilder::class,
