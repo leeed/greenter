@@ -15,7 +15,7 @@
 		"php": ">=5.5.9",
         "greenter/xmldsig": "^5.0",
         "greenter/core": "dev-v2.2.4-branch",
-        "greenter/ws": "^2.1",
+        "greenter/ws": "dev-v2.2.2-branch",
         "greenter/xml": "dev-v2.2.6-branch"
     },
 	"require-dev": {
@@ -35,6 +35,10 @@
         {
             "type": "vcs",
             "url": "https://github.com/leeed/core"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/leeed/ws"
         },
         {
             "type": "vcs",
